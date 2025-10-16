@@ -8,7 +8,7 @@ const Contact = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Entre em contato</h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-12"></div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="max-w-2xl mx-auto">
             <div className="bg-card rounded-2xl shadow-xl p-8 md:p-10">
               <h3 className="text-2xl font-bold mb-6">Fale conosco</h3>
               <p className="text-muted-foreground mb-8 leading-relaxed">
@@ -81,19 +81,6 @@ const Contact = () => {
                   </div>
                 </a>
               </div>
-            </div>
-
-            <div className="bg-card rounded-2xl shadow-xl overflow-hidden h-full min-h-[500px]">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.0715648976773!2d-47.06336072377935!3d-22.905879437641766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c8f6e6f6e6f7%3A0x6f6e6f6e6f6e6f6e!2sRua%20Dr.%20Quirino%2C%201044%20-%20Centro%2C%20Campinas%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Localização ACM Carimbos"
-              ></iframe>
             </div>
           </div>
 
