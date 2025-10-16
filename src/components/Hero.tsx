@@ -1,9 +1,14 @@
 import logo from "@/assets/logo.png";
+import heroBackground from "@/assets/hero-bg.png";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-secondary via-secondary to-secondary/90 pt-20">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(220,38,38,0.1),transparent_50%)]" />
+    <section className="relative min-h-screen flex items-center justify-center pt-20">
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroBackground})` }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-br from-secondary/95 via-secondary/90 to-secondary/85" />
       
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-5xl mx-auto text-center">
