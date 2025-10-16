@@ -31,9 +31,9 @@ const Header = () => {
         isScrolled ? "bg-secondary shadow-lg" : "bg-secondary/95 backdrop-blur-sm"
       }`}
     >
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
-          <img src={logo} alt="ACM Carimbos" className="h-12 md:h-14" />
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 sm:h-20">
+          <img src={logo} alt="ACM Carimbos" className="h-10 sm:h-12 md:h-14 lg:h-16" />
 
           <nav className="hidden md:flex items-center gap-8">
             <button
