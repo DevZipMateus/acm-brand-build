@@ -13,16 +13,16 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-secondary text-secondary-foreground pt-12 sm:pt-16 pb-6 sm:pb-8">
+    <footer className="bg-secondary text-secondary-foreground pt-10 sm:pt-14 md:pt-16 pb-5 sm:pb-6 md:pb-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-8 sm:mb-12">
-            <div className="sm:col-span-2">
-              <img src={logo} alt="ACM Carimbos" className="h-12 sm:h-14 lg:h-16 mb-3 sm:mb-4" />
-              <p className="text-sm sm:text-base text-secondary-foreground/80 mb-3 sm:mb-4 leading-relaxed">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 md:gap-8 mb-6 sm:mb-8 md:mb-10 lg:mb-12">
+            <div className="sm:col-span-2 lg:col-span-2">
+              <img src={logo} alt="ACM Carimbos" className="h-10 sm:h-12 md:h-14 lg:h-16 mb-2 sm:mb-3 md:mb-4" />
+              <p className="text-xs sm:text-sm md:text-base text-secondary-foreground/80 mb-2 sm:mb-3 md:mb-4 leading-relaxed">
                 Desde 1982 oferecendo carimbos personalizados de alta qualidade. Empresa familiar certificada pelo Sebrae no Programa de Qualidade Total.
               </p>
-              <p className="text-sm sm:text-base text-primary font-semibold italic">
+              <p className="text-xs sm:text-sm md:text-base text-primary font-semibold italic">
                 Marca, Personaliza e Identifica
               </p>
             </div>
@@ -119,12 +119,12 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="border-t border-white/10 pt-6 sm:pt-8">
-            <div className="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4">
-              <p className="text-secondary-foreground/60 text-xs sm:text-sm text-center sm:text-left">
+          <div className="border-t border-white/10 pt-4 sm:pt-6 md:pt-8">
+            <div className="flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-3 md:gap-4">
+              <p className="text-secondary-foreground/60 text-xs md:text-sm text-center sm:text-left">
                 © {new Date().getFullYear()} ACM Servs e Com de Carimbos Ltda. Todos os direitos reservados.
               </p>
-              <p className="text-secondary-foreground/60 text-xs sm:text-sm text-center sm:text-right">
+              <p className="text-secondary-foreground/60 text-xs md:text-sm text-center sm:text-right">
                 CNPJ: 08.968.365/0001-16
               </p>
             </div>

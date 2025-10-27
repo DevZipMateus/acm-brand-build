@@ -3,22 +3,22 @@ import storePhoto from "@/assets/store-photo.jpg";
 
 const About = () => {
   return (
-    <section id="sobre" className="py-12 sm:py-16 lg:py-20 bg-background">
+    <section id="sobre" className="py-10 sm:py-14 md:py-16 lg:py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-3 sm:mb-4">Sobre nós</h2>
-          <div className="w-16 sm:w-20 h-1 bg-primary mx-auto mb-8 sm:mb-12"></div>
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-2 sm:mb-3 md:mb-4">Sobre nós</h2>
+          <div className="w-12 sm:w-16 md:w-20 h-1 bg-primary mx-auto mb-6 sm:mb-8 md:mb-10 lg:mb-12"></div>
           
-          <div className="bg-card rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 md:p-10 lg:p-12 mb-8 sm:mb-12">
-            <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
+          <div className="bg-card rounded-lg md:rounded-xl lg:rounded-2xl shadow-xl p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 mb-6 sm:mb-8 md:mb-10 lg:mb-12">
+            <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 items-center">
               <div className="order-2 md:order-1">
-                <p className="text-base sm:text-lg text-foreground leading-relaxed mb-4 sm:mb-6">
+                <p className="text-sm sm:text-base md:text-lg text-foreground leading-relaxed mb-3 sm:mb-4 md:mb-6">
                   Com sede em Campinas, somos uma empresa familiar desde a fundação do empreendimento, em 1982. Por isso o cuidado e eficiência desde o primeiro contato até a entrega do carimbo e demais produtos, sempre foram e ainda são nossas prioridades.
                 </p>
-                <p className="text-base sm:text-lg text-foreground leading-relaxed mb-4 sm:mb-6">
+                <p className="text-sm sm:text-base md:text-lg text-foreground leading-relaxed mb-3 sm:mb-4 md:mb-6">
                   ACM uma empresa certificada pelo Sebrae no Programa de Qualidade Total. Produzimos nossos carimbos com atenção aos mínimos detalhes durante a execução dos produtos.
                 </p>
-                <p className="text-base sm:text-lg text-foreground leading-relaxed">
+                <p className="text-sm sm:text-base md:text-lg text-foreground leading-relaxed">
                   É com essa visão que esperamos atender nossos clientes cada vez melhor e fidelizá-los. Atuamos no mercado de fabricação de carimbos e venda de insumos.
                 </p>
               </div>
