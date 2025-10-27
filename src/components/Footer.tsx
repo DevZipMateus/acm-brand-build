@@ -81,19 +81,28 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="mailto:adm@acmcarimbos.com.br"
+                    href="mailto:carimbo@acmcarimbos.com.br"
                     className="flex items-center gap-2 text-secondary-foreground/80 hover:text-primary transition-colors duration-300"
                   >
                     <Mail className="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm break-all">adm@acmcarimbos.com.br</span>
+                    <span className="text-xs sm:text-sm break-all">carimbo@acmcarimbos.com.br</span>
                   </a>
                 </li>
-                <li className="flex items-start gap-2 text-secondary-foreground/80">
-                  <MapPin className="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0 mt-0.5 sm:mt-1" />
-                  <span className="text-xs sm:text-sm">
-                    Rua Dr Quirino, 1044<br />
-                    Centro - Campinas/SP
-                  </span>
+                <li>
+                  <a
+                    href="https://maps.google.com/?q=Rua+Dr+Quirino,+1044+Centro+Campinas+SP"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-start gap-2 text-secondary-foreground/80 hover:text-primary transition-colors duration-300"
+                  >
+                    <MapPin className="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0 mt-0.5 sm:mt-1" />
+                    <span className="text-xs sm:text-sm">
+                      Rua Dr Quirino, 1044<br />
+                      Centro - Campinas/SP<br />
+                      <span className="font-semibold">Convênio com estacionamento:</span><br />
+                      Rua Dr Quirino, 986
+                    </span>
+                  </a>
                 </li>
                 <li>
                   <a

@@ -32,7 +32,7 @@ const Contact = () => {
                 </a>
 
                 <a
-                  href="mailto:adm@acmcarimbos.com.br"
+                  href="mailto:carimbo@acmcarimbos.com.br"
                   className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 rounded-lg hover:bg-muted transition-colors duration-300 group"
                 >
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
@@ -40,12 +40,17 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-semibold mb-0.5 sm:mb-1 text-sm sm:text-base">E-mail</p>
-                    <p className="text-sm sm:text-base text-muted-foreground break-all">adm@acmcarimbos.com.br</p>
+                    <p className="text-sm sm:text-base text-muted-foreground break-all">carimbo@acmcarimbos.com.br</p>
                   </div>
                 </a>
 
-                <div className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 rounded-lg">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <a
+                  href="https://maps.google.com/?q=Rua+Dr+Quirino,+1044+Centro+Campinas+SP"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 rounded-lg hover:bg-muted transition-colors duration-300 group"
+                >
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
                     <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                   </div>
                   <div>
@@ -53,7 +58,7 @@ const Contact = () => {
                     <p className="text-sm sm:text-base text-muted-foreground">Rua Dr Quirino, 1044 - Centro</p>
                     <p className="text-sm sm:text-base text-muted-foreground">Campinas - SP</p>
                   </div>
-                </div>
+                </a>
 
                 <div className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 rounded-lg">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
