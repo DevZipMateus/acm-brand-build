@@ -1,4 +1,5 @@
 import { Target, Eye, Heart } from "lucide-react";
+import storePhoto from "@/assets/store-photo.jpg";
 
 const About = () => {
   return (
@@ -9,15 +10,26 @@ const About = () => {
           <div className="w-16 sm:w-20 h-1 bg-primary mx-auto mb-8 sm:mb-12"></div>
           
           <div className="bg-card rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 md:p-10 lg:p-12 mb-8 sm:mb-12">
-            <p className="text-base sm:text-lg text-foreground leading-relaxed mb-4 sm:mb-6">
-              Com sede em Campinas, somos uma empresa familiar desde a fundação do empreendimento, em 1982. Por isso o cuidado e eficiência desde o primeiro contato até a entrega do carimbo e demais produtos, sempre foram e ainda são nossas prioridades.
-            </p>
-            <p className="text-base sm:text-lg text-foreground leading-relaxed mb-4 sm:mb-6">
-              ACM uma empresa certificada pelo Sebrae no Programa de Qualidade Total. Produzimos nossos carimbos com atenção aos mínimos detalhes durante a execução dos produtos.
-            </p>
-            <p className="text-base sm:text-lg text-foreground leading-relaxed">
-              É com essa visão que esperamos atender nossos clientes cada vez melhor e fidelizá-los. Atuamos no mercado de fabricação de carimbos e venda de insumos.
-            </p>
+            <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
+              <div className="order-2 md:order-1">
+                <p className="text-base sm:text-lg text-foreground leading-relaxed mb-4 sm:mb-6">
+                  Com sede em Campinas, somos uma empresa familiar desde a fundação do empreendimento, em 1982. Por isso o cuidado e eficiência desde o primeiro contato até a entrega do carimbo e demais produtos, sempre foram e ainda são nossas prioridades.
+                </p>
+                <p className="text-base sm:text-lg text-foreground leading-relaxed mb-4 sm:mb-6">
+                  ACM uma empresa certificada pelo Sebrae no Programa de Qualidade Total. Produzimos nossos carimbos com atenção aos mínimos detalhes durante a execução dos produtos.
+                </p>
+                <p className="text-base sm:text-lg text-foreground leading-relaxed">
+                  É com essa visão que esperamos atender nossos clientes cada vez melhor e fidelizá-los. Atuamos no mercado de fabricação de carimbos e venda de insumos.
+                </p>
+              </div>
+              <div className="order-1 md:order-2">
+                <img 
+                  src={storePhoto} 
+                  alt="Loja ACM Carimbos em Campinas"
+                  className="w-full h-auto rounded-lg shadow-lg object-cover"
+                />
+              </div>
+            </div>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">

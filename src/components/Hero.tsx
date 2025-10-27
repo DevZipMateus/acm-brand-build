@@ -20,6 +20,29 @@ const Hero = () => {
               className="h-24 sm:h-32 md:h-40 lg:h-48 mx-auto"
             />
           </div>
+
+          {/* Address and Parking Banner */}
+          <div className="max-w-3xl mx-auto mb-6 sm:mb-8 space-y-3 sm:space-y-4 animate-fade-in">
+            <div className="bg-white/95 backdrop-blur-sm rounded-lg shadow-lg p-4 sm:p-5">
+              <div className="flex items-center justify-center gap-2 sm:gap-3 text-secondary">
+                <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span className="font-semibold text-base sm:text-lg md:text-xl">Rua Dr Quirino, 1044 Centro Campinas-SP</span>
+              </div>
+            </div>
+
+            <div className="bg-white/95 backdrop-blur-sm rounded-lg shadow-lg p-4 sm:p-5">
+              <div className="flex items-center justify-center gap-2 sm:gap-3 text-secondary mb-2">
+                <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
+                </svg>
+                <span className="font-semibold text-base sm:text-lg md:text-xl">TEMOS CONVÊNIO COM ESTACIONAMENTO</span>
+              </div>
+              <p className="text-center text-secondary text-sm sm:text-base">Rua Dr Quirino, 986</p>
+            </div>
+          </div>
           
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-secondary-foreground mb-4 sm:mb-6 px-4 animate-fade-in">
             ACM Servs e Com de Carimbos Ltda
