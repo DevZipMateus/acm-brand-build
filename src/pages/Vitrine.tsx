@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Vitrine = () => {
@@ -26,7 +27,7 @@ const Vitrine = () => {
             sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-modals allow-popups-to-escape-sandbox"
           />
         </div>
-        <div className="h-16 shrink-0" />
+        <Footer />
       </div>
       <WhatsAppButton />
     </>
