@@ -14,13 +14,22 @@ const Vitrine = () => {
   }, []);
 
   return (
-    <div className="fixed inset-0 bg-background">
-      <Header />
+    <div className="fixed inset-0 bg-background overflow-hidden">
+      {/* Header fixo com 80px de altura */}
+      <div className="h-20 w-full">
+        <Header />
+      </div>
+      
+      {/* Iframe ocupando o espaço restante: 100vh - 80px (header) - 63px (badge) */}
       <iframe 
         src="https://v4.egestor.com.br/vitrine/?s=acmcarimbos" 
-        className="w-full h-[calc(100vh-4rem)] sm:h-[calc(100vh-4.5rem)] md:h-[calc(100vh-5rem)] mt-16 sm:mt-18 md:mt-20 border-none"
+        className="w-full h-[calc(100vh-143px)] border-none"
         title="Vitrine ACM Carimbos"
       />
+      
+      {/* Espaço para o badge inferior com 63px de altura */}
+      <div className="h-[63px] w-full" />
+      
       <WhatsAppButton />
     </div>
   );
