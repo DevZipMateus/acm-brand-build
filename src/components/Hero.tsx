@@ -23,14 +23,6 @@ const Hero = () => {
             />
           </div>
 
-          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-secondary-foreground mb-3 md:mb-4 lg:mb-6 px-4 animate-fade-in">
-            ACM Servs e Com de Carimbos Ltda
-          </h1>
-          
-          <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-muted-foreground mb-6 md:mb-8 px-4 animate-fade-in">
-            Carimbos personalizados de alta qualidade desde 1982
-          </h2>
-
           {/* Two Column Layout */}
           <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-start mb-6 md:mb-8 animate-fade-in">
             {/* Left Column - Delivery Banner, Text and Buttons */}
