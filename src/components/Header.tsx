@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
+import { useNavigate, useLocation } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,14 +18,40 @@ const Header = () => {
   }, []);
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      const offset = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
-      window.scrollTo({ top: offsetPosition, behavior: "smooth" });
-      setIsMobileMenuOpen(false);
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          const offset = 80;
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - offset;
+          window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        const offset = 80;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - offset;
+        window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+      }
     }
+    setIsMobileMenuOpen(false);
+  };
+
+  const handleLogoClick = () => {
+    if (location.pathname === '/') {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      navigate('/');
+    }
+  };
+
+  const handleVitrineClick = () => {
+    navigate('/vitrine');
+    setIsMobileMenuOpen(false);
   };
 
   return (
@@ -33,7 +62,12 @@ const Header = () => {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <img src={logo} alt="ACM Carimbos" className="h-10 md:h-12 lg:h-14 xl:h-16" />
+          <img 
+            src={logo} 
+            alt="ACM Carimbos" 
+            className="h-10 md:h-12 lg:h-14 xl:h-16 cursor-pointer" 
+            onClick={handleLogoClick}
+          />
 
           <nav className="hidden md:flex items-center gap-3 lg:gap-5 xl:gap-6 text-sm lg:text-base">
             <button
@@ -44,7 +78,7 @@ const Header = () => {
             </button>
             <span className="text-secondary-foreground/40">|</span>
             <button
-              onClick={() => scrollToSection('vitrine')}
+              onClick={handleVitrineClick}
               className="hover:text-primary transition-colors duration-300 font-medium text-secondary-foreground"
             >
               VITRINE
@@ -105,7 +139,7 @@ const Header = () => {
                 Sobre
               </button>
               <button
-                onClick={() => scrollToSection("vitrine")}
+                onClick={handleVitrineClick}
                 className="text-secondary-foreground hover:text-primary transition-colors duration-300 font-medium text-left py-2"
               >
                 Vitrine
