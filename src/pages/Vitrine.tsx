@@ -14,7 +14,7 @@ const Vitrine = () => {
   }, []);
 
   return (
-    <div className="fixed inset-0 bg-background overflow-hidden">
+    <div className="min-h-screen bg-background">
       {/* Header fixo com 80px de altura */}
       <div className="h-20 w-full">
         <Header />
