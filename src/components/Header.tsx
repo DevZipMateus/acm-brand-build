@@ -77,7 +77,7 @@ const Header = () => {
             </button>
             <span className="text-secondary-foreground/40">|</span>
             <button
-              onClick={() => scrollToSection('vitrine')}
+              onClick={() => navigate('/vitrine')}
               className="hover:text-primary transition-colors duration-300 font-medium text-secondary-foreground"
             >
               VITRINE
@@ -138,7 +138,7 @@ const Header = () => {
                 Sobre
               </button>
               <button
-                onClick={() => scrollToSection("vitrine")}
+                onClick={() => navigate('/vitrine')}
                 className="text-secondary-foreground hover:text-primary transition-colors duration-300 font-medium text-left py-2"
               >
                 Vitrine
