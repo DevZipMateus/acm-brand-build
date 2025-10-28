@@ -14,12 +14,12 @@ const Vitrine = () => {
   }, []);
 
   return (
-    <div className="fixed inset-0 bg-background flex flex-col">
+    <div className="min-h-screen bg-background flex flex-col">
       <Header />
-      <div className="flex-1 relative overflow-auto w-full">
+      <div className="flex-1 w-full overflow-auto">
         <iframe 
           src="https://v4.egestor.com.br/vitrine/?s=acmcarimbos" 
-          className="w-full h-full min-h-screen border-none"
+          className="w-full h-full min-h-[calc(100vh-4rem)] sm:min-h-[calc(100vh-5rem)] border-none"
           title="Vitrine ACM Carimbos"
           allow="payment"
           sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-modals allow-popups-to-escape-sandbox"
