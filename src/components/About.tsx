@@ -1,5 +1,5 @@
 import { Target, Eye, Heart } from "lucide-react";
-import storePhoto from "@/assets/store-photo.jpg";
+import heroBackground from "@/assets/hero-bg.png";
 
 const About = () => {
   return (
@@ -24,8 +24,8 @@ const About = () => {
               </div>
               <div className="order-1 md:order-2">
                 <img 
-                  src={storePhoto} 
-                  alt="Loja ACM Carimbos em Campinas"
+                  src={heroBackground} 
+                  alt="ACM Carimbos - Marca, Personaliza e Identifica"
                   className="w-full h-auto rounded-lg shadow-lg object-cover"
                 />
               </div>
