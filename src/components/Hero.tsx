@@ -2,6 +2,7 @@ import { Phone } from "lucide-react";
 import logo from "@/assets/logo.png";
 import heroBackground from "@/assets/hero-bg.png";
 import parkingBanner from "@/assets/parking-banner.jpeg";
+import DeliveryBanner from "./DeliveryBanner";
 
 const Hero = () => {
   return (
@@ -31,13 +32,7 @@ const Hero = () => {
             />
           </div>
           
-          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-secondary-foreground mb-3 md:mb-4 lg:mb-6 px-4 animate-fade-in">
-            ACM Servs e Com de Carimbos Ltda
-          </h1>
-          
-          <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-muted-foreground mb-4 md:mb-6 lg:mb-8 px-4 animate-fade-in">
-            Carimbos personalizados de alta qualidade desde 1982
-          </h2>
+          <DeliveryBanner />
           
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-6 md:mb-8 lg:mb-12 max-w-3xl mx-auto px-4 leading-relaxed animate-fade-in">
             Empresa familiar de Campinas com mais de 40 anos de experiência, certificada pelo Sebrae no Programa de Qualidade Total
