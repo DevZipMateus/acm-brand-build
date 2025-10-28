@@ -14,16 +14,15 @@ const Vitrine = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background flex flex-col">
+    <div className="min-h-screen bg-background">
       <Header />
-      <div className="flex-1 w-full overflow-auto">
+      <div className="pt-16 sm:pt-18 md:pt-20 w-full">
         <iframe 
           src="https://v4.egestor.com.br/vitrine/?s=acmcarimbos" 
-          className="w-full h-full min-h-[calc(100vh-4rem)] sm:min-h-[calc(100vh-5rem)] border-none"
+          className="w-full min-h-[calc(100vh-4rem)] sm:min-h-[calc(100vh-4.5rem)] md:min-h-[calc(100vh-5rem)] border-none"
           title="Vitrine ACM Carimbos"
           allow="payment"
           sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-modals allow-popups-to-escape-sandbox"
-          style={{ minWidth: '100%' }}
         />
       </div>
       <WhatsAppButton />
