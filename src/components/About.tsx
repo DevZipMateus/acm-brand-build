@@ -22,11 +22,11 @@ const About = () => {
                   É com essa visão que esperamos atender nossos clientes cada vez melhor e fidelizá-los. Atuamos no mercado de fabricação de carimbos e venda de insumos.
                 </p>
               </div>
-              <div className="order-1 md:order-2">
+              <div className="order-1 md:order-2 flex justify-center">
                 <img 
                   src={heroBackground} 
                   alt="ACM Carimbos - Marca, Personaliza e Identifica"
-                  className="w-full h-auto rounded-lg shadow-lg object-cover"
+                  className="w-3/4 h-auto rounded-lg shadow-lg object-cover"
                 />
               </div>
             </div>
