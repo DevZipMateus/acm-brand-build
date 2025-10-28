@@ -1,4 +1,4 @@
-import { Bike } from "lucide-react";
+import deliveryIcon from "@/assets/delivery-icon.jpg";
 
 const DeliveryBanner = () => {
   return (
@@ -7,16 +7,17 @@ const DeliveryBanner = () => {
         <div className="max-w-4xl mx-auto">
           <div className="bg-white rounded-lg md:rounded-xl shadow-2xl p-4 sm:p-6 md:p-8 lg:p-10">
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 md:gap-6">
-              <div className="bg-primary/10 p-3 sm:p-4 md:p-5 rounded-full flex-shrink-0">
-                <Bike className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 text-primary" />
+              <div className="flex-shrink-0">
+                <img 
+                  src={deliveryIcon} 
+                  alt="Entrega Moto Boy"
+                  className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 object-contain"
+                />
               </div>
               <div className="text-center sm:text-left">
-                <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-1 sm:mb-2 md:mb-3">
+                <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-primary">
                   ENTREGA MOTO BOY
                 </h2>
-                <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground">
-                  Informe rua e n°
-                </p>
               </div>
             </div>
           </div>

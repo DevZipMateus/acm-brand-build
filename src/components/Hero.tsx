@@ -1,6 +1,7 @@
 import { Phone } from "lucide-react";
 import logo from "@/assets/logo.png";
 import heroBackground from "@/assets/hero-bg.png";
+import deliveryIcon from "@/assets/delivery-icon.jpg";
 
 const Hero = () => {
   return (
@@ -35,22 +36,25 @@ const Hero = () => {
 
             <div className="bg-white/95 backdrop-blur-sm rounded-lg shadow-lg p-3 sm:p-4 md:p-5">
               <div className="flex items-center justify-center gap-2 md:gap-3 text-secondary mb-1 md:mb-2 flex-wrap">
-                <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
-                </svg>
+                <div className="flex items-center justify-center w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 rounded-full border-2 border-secondary flex-shrink-0">
+                  <span className="font-bold text-xs sm:text-sm md:text-base">E</span>
+                </div>
                 <span className="font-semibold text-sm sm:text-base md:text-lg lg:text-xl">TEMOS CONVÊNIO COM ESTACIONAMENTO</span>
               </div>
               <p className="text-center text-secondary text-xs sm:text-sm md:text-base">Rua Dr Quirino, 986</p>
             </div>
+
+            <div className="bg-white/95 backdrop-blur-sm rounded-lg shadow-lg p-3 sm:p-4 md:p-5">
+              <div className="flex items-center justify-center gap-2 md:gap-3">
+                <img 
+                  src={deliveryIcon} 
+                  alt="Entrega Moto Boy"
+                  className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 object-contain flex-shrink-0"
+                />
+                <span className="font-semibold text-sm sm:text-base md:text-lg lg:text-xl text-secondary">ENTREGA MOTO BOY</span>
+              </div>
+            </div>
           </div>
-          
-          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-secondary-foreground mb-3 md:mb-4 lg:mb-6 px-4 animate-fade-in">
-            ACM Servs e Com de Carimbos Ltda
-          </h1>
-          
-          <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-muted-foreground mb-4 md:mb-6 lg:mb-8 px-4 animate-fade-in">
-            Carimbos personalizados de alta qualidade desde 1982
-          </h2>
           
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-6 md:mb-8 lg:mb-12 max-w-3xl mx-auto px-4 leading-relaxed animate-fade-in">
             Empresa familiar de Campinas com mais de 40 anos de experiência, certificada pelo Sebrae no Programa de Qualidade Total
