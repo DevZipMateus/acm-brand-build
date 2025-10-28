@@ -24,7 +24,7 @@ const Hero = () => {
           </div>
 
           {/* Parking Banner Image */}
-          <div className="max-w-3xl mx-auto mb-6 md:mb-8 animate-fade-in">
+          <div className="max-w-xl mx-auto mb-6 md:mb-8 animate-fade-in">
             <img 
               src={parkingBanner} 
               alt="Novo Endereço - Rua Dr. Quirino, 1044 - Convênio com Estacionamento"
