@@ -16,13 +16,14 @@ const Vitrine = () => {
   return (
     <div className="fixed inset-0 bg-background flex flex-col">
       <Header />
-      <div className="flex-1 relative overflow-hidden">
+      <div className="flex-1 relative overflow-auto w-full">
         <iframe 
           src="https://v4.egestor.com.br/vitrine/?s=acmcarimbos" 
-          className="absolute inset-0 w-full h-full border-none"
+          className="w-full h-full min-h-screen border-none"
           title="Vitrine ACM Carimbos"
           allow="payment"
-          sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-modals"
+          sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-modals allow-popups-to-escape-sandbox"
+          style={{ minWidth: '100%' }}
         />
       </div>
       <WhatsAppButton />
